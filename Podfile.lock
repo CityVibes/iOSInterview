@@ -1,0 +1,80 @@
+PODS:
+  - Alamofire (5.4.3)
+  - DifferenceKit (1.1.5):
+    - DifferenceKit/Core (= 1.1.5)
+    - DifferenceKit/UIKitExtension (= 1.1.5)
+  - DifferenceKit/Core (1.1.5)
+  - DifferenceKit/UIKitExtension (1.1.5):
+    - DifferenceKit/Core
+  - Realm (10.8.0):
+    - Realm/Headers (= 10.8.0)
+  - Realm/Headers (10.8.0)
+  - RealmSwift (10.8.0):
+    - Realm (= 10.8.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRealm (4.0.3):
+    - Realm (~> 10.5)
+    - RealmSwift (~> 10.5)
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - Swinject (2.7.1)
+  - SwinjectAutoregistration (2.7.0):
+    - Swinject (~> 2.7)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.7.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - DifferenceKit (= 1.1.5)
+  - RealmSwift
+  - RxCocoa (= 5.1.1)
+  - RxRealm
+  - RxSwift (= 5.1.1)
+  - Swinject (= 2.7.1)
+  - SwinjectAutoregistration (= 2.7.0)
+  - SwinjectStoryboard (from `https://github.com/relax94/SwinjectStoryboard.git`, branch `feature/update-xcode-for-swift5.2`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DifferenceKit
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRealm
+    - RxRelay
+    - RxSwift
+    - Swinject
+    - SwinjectAutoregistration
+
+EXTERNAL SOURCES:
+  SwinjectStoryboard:
+    :branch: feature/update-xcode-for-swift5.2
+    :git: https://github.com/relax94/SwinjectStoryboard.git
+
+CHECKOUT OPTIONS:
+  SwinjectStoryboard:
+    :commit: 9c61e659000211abfe1b42b0741a8f36d29fa4e0
+    :git: https://github.com/relax94/SwinjectStoryboard.git
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  DifferenceKit: 516f12e336ed65a3a0665847b5c3cb5cad4bd4ea
+  Realm: ad3c5cd762e5a5bc02080fc55aa04a0e43f98575
+  RealmSwift: 316e450478fb01e06ece4438dda42f407c5f51d2
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRealm: 80e8dc97f7b664d9b89192ac850daaa33c34d157
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
+  SwinjectStoryboard: f0d5b1c16459949d6ff1cbb6610107946b18e1f8
+
+PODFILE CHECKSUM: 3d85293e17f66b47d4de9bb2b3532b8887cac16a
+
+COCOAPODS: 1.10.1

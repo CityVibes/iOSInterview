@@ -1,18 +1,12 @@
-//
-//  AppDelegate.swift
-//  Jams
-//
-//  Created by Julius Skripkauskas on 6/22/21.
-//  Copyright © 2021 Julius Skripkauskas. All rights reserved.
-//
-
 import UIKit
 import CoreData
+import SwinjectStoryboard
+import Swinject
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let assembler = Assembler([AppAssembly()])
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -80,3 +74,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+class AppAssembly: Assembly {
+    
+    func assemble(container: Container) {
+        container.register(GitApi.self) { resolver in
+            GitApi()
+        }
+        
+        container.storyboardInitCompleted(ViewController.self) { r, vc in
+//            vc.api = r.resolve(GitApi.self)
+        }
+    }
+
+}
