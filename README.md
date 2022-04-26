@@ -11,4 +11,4 @@ Tasks:
 3. (Optional) Add pagination functionality.
 4. Push your code to GitHub.
 
-![app](https://gh.riotgames.com/ext-jskripkauskas/iOSInterviewTemplate1/screen.png)
+![app](https://gh.riotgames.com/ext-jskripkauskas/iOSInterviewTemplate1/blob/template/screen.png)
